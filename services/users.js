@@ -2,7 +2,7 @@ const Users = require("../models/users");
 
 class UserService {
   async SignUp({ name, email, password }) {
-    console.log(name, email, password, "ooooooooooo");
+    // console.log(name, email, password, "ooooooooooo");
     try {
       console.log("yes is workignd,mg,gfdnfdngfjkfhkgjkjn");
       const exists_user = await Users.query().where({ email });
